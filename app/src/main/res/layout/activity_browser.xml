@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/brow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/cw"
+                android:layout_below="@id/ye"
+                android:layout_marginBottom="2dp"></WebView>
+
+ <LinearLayout
+            android:id="@+id/ye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:contentInsetLeft="0.0dip"
+                app:contentInsetStart="0.0dip"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:id="@+id/d_toolbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/d"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#ffffffff"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="1dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/hh"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5.0dip"
+                            android:paddingRight="2.0dip">
+
+                            <ImageView
+                                android:id="@+id/browserimage"
+                                android:layout_width="30.0dip"
+                                android:layout_height="30.0dip"
+                                android:padding="4.0dip"
+                                app:srcCompat="@mipmap/google" />
+
+                            <FrameLayout
+                                android:id="@+id/webhed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/urlset"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40.0dip"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:inputType="textUri"
+                                    android:lines="1"
+                                    android:paddingLeft="5.0dip"
+                                    android:paddingRight="30.0dip"
+                                    android:textColor="?android:textColorTertiaryInverse"
+                                    android:textSize="16.0dip" />
+
+                                <FrameLayout
+                                    android:id="@+id/refreshcut"
+                                    android:layout_width="50.0dip"
+                                    android:layout_height="40.0dip"
+                                    android:layout_gravity="end"
+                                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                                    <ImageView
+                                        android:id="@+id/cut"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="?attr/selectableItemBackgroundBorderless"
+                                        android:paddingLeft="23.0dip"
+                                        android:paddingTop="5.0dip"
+                                        android:paddingRight="3.0dip"
+                                        android:paddingBottom="5.0dip"
+                                        android:src="@drawable/clear" />
+
+                                    <ImageView
+                                        android:id="@+id/refresh_"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="3.0dip"
+                                        android:paddingLeft="23.0dip"
+                                        android:paddingTop="5.0dip"
+                                        android:paddingRight="3.0dip"
+                                        android:paddingBottom="5.0dip"
+                                        android:src="@drawable/refresh"
+                                        card_view:visibility="gone" />
+                                </FrameLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <include layout="@layout/download" />
+
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ProgressBar
+                android:id="@+id/browserprogressbar"
+                style="@style/browserprogressbar"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/toolbar"
+                android:background="#ffffffff"
+            />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/browserprogressbar"
+                android:background="@drawable/searchelavation" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/co"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cw"
+            android:background="@drawable/browsergonebac"
+            android:paddingTop="100.0dip"
+            android:paddingBottom="10.0dip"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/di"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                card_view:cardCornerRadius="2.0dip"
+                card_view:cardElevation="3.0dip"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="18.0dip"
+                        android:paddingTop="16.0dip"
+                        android:paddingRight="13.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:text="Turn on web ad blocker to prevent annoying website ads"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="17.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13.0dip"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="9.0dip"
+                        android:paddingBottom="10.0dip">
+
+                        <TextView
+                            android:id="@+id/dd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20.0dip"
+                            android:paddingTop="10.0dip"
+                            android:paddingRight="20.0dip"
+                            android:paddingBottom="10.0dip"
+                            android:text="Cancel"
+                            android:textAllCaps="true"
+                            android:textColor="?android:textColorSecondary"
+                            android:textSize="13.0dip"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/z3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20.0dip"
+                            android:paddingTop="10.0dip"
+                            android:paddingRight="20.0dip"
+                            android:paddingBottom="10.0dip"
+                            android:text="Turn on"
+                            android:textAllCaps="true"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="13.0dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/cx"
+            android:layout_width="fill_parent"
+            android:layout_height="7.0dip"
+            android:layout_above="@id/cw"
+            android:background="@drawable/browserbottomelev" />
+
+        <LinearLayout
+            android:id="@+id/cw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:weightSum="5.0">
+
+                <ImageButton
+                    android:id="@+id/backword"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="14.0dip"
+                    android:src="@drawable/arrow_black" />
+
+                <ImageButton
+                    android:id="@+id/forword"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="14.0dip"
+                    android:src="@drawable/ic_arrow_forward" />
+
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="14.0dip"
+                    android:src="@drawable/ic_home_black_24dp" />
+
+
+
+                <ImageButton
+                    android:id="@+id/refresh"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="14.0dip"
+                    android:src="@drawable/refresh" />
+                <ImageButton
+                    android:id="@+id/popup"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingRight="10.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:src="@drawable/ic_more_vert_black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:paddingBottom="5.0dip"
+                android:text="Incognite Tab"
+                android:textColor="@android:color/white"
+                android:textSize="14.0dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/hole_download_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cw"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:src="@drawable/download_white"
+            android:visibility="gone"
+            app:backgroundTint="#ffb71c1c"
+            app:borderWidth="0.0dip"
+            app:elevation="8.0dip"
+            app:pressedTranslationZ="6.0dip"
+            app:rippleColor="#66ffffff">
+
+            <ImageView
+                android:id="@+id/download_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download_jump" />
+
+            <ImageView
+                android:id="@+id/download_fab_no_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/download_no_found" />
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_download_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cw"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:src="@drawable/ic_camera_black_24dp"
+            app:borderWidth="0.0dip"
+            app:elevation="8.0dip"
+            app:pressedTranslationZ="6.0dip"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="#66ffffff"
+          />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone"
+            app:fabCustomSize="200dp"
+            app:maxImageSize="140dp" />
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/framehole"
+
+        android:visibility="gone" />
+
+</FrameLayout>

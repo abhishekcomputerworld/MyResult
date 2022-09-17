@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ImageButton
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="16.0dip"
+        android:src="@drawable/download" />
+
+
+</RelativeLayout>

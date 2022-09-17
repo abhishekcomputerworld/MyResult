@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/all"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/nav_header_height"
+
+
+    android:background="@color/colorPrimary"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="12dp"
+        android:tag="binding_1"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="0.0"
+            android:visibility="visible"
+            app:srcCompat="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_header_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_header_subtitle"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="14dp"
+        android:paddingRight="12dp"
+        android:tag="binding_2"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/userimg"
+            android:layout_width="42.0dip"
+            android:layout_height="42dp"
+            android:layout_marginRight="12.0dip"
+            android:visibility="visible"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/user_name_v2"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_toLeftOf="@id/ic_chevron"
+            android:layout_toRightOf="@id/userimg"
+            android:tag="binding_4"
+            android:text="New User"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/user_name_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="7.0dip"
+            android:layout_toLeftOf="@id/ic_chevron"
+            android:layout_toRightOf="@id/userimg"
+            android:tag="binding_3"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/ic_chevron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

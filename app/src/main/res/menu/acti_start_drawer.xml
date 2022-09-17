@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/noti"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/title_notif" />
+
+        <item
+            android:id="@+id/prof"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/prof"
+            android:visible="false" />
+        <item
+            android:id="@+id/pri"
+
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="@string/pri" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/sha"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/refer" />
+            <item
+                android:id="@+id/lik"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                android:title="@string/lik" />
+            <item
+                android:id="@+id/out"
+                android:icon="@drawable/ic_shuffle_black_24dp"
+
+                android:title="@string/out" />
+
+            <item
+                android:id="@+id/action_apps"
+                android:icon="@drawable/ic_baseline_adb_24"
+                android:orderInCategory="100"
+                android:title="More Apps"
+               />
+
+            <item
+                android:id="@+id/action_disclaimer"
+                android:title="Disclaimer"
+                android:orderInCategory="100"
+              />
+        </menu>
+    </item>
+
+</menu>

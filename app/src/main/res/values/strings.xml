@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">My Result</string>
+    <string name="title_activity_start">My Result</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Log in to MyResult</string>
+    <string name="nav_header_subtitle">For a better experience</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_digi">DigiLocker</string>
+    <string name="title_notif">Notification</string>
+    <string name="login">Login</string>
+
+    <string name="title_lib">Libary</string>
+
+    <string name="lik">Like</string>
+    <string name="ref">Refresh</string>
+    <string name="sha">Share</string>
+    <string name="upd">Update app</string>
+    <string name="Scr">Screen shot</string>
+    <string name="prof">Profile</string>
+    <string name="pri">Privacy Policy</string>
+    <string name="refer">Refer to friend</string>
+    <string name="out">Logout</string>
+    <string name="shmsg">You found this app helpful, then help your friends by sharing a link of this app by Whatsapp/Gmail/Twitter etc.</string>
+    <string name="ratings">Like your app</string>
+    <string name="ratingmsg">"After pressing 'PROCEED'you will be taken to the App page. Scroll down until you see stars and then give 5 stars if you liked this app. Also write what you liked."</string>
+    <string name="updatle">Check for App Updates</string>
+    <string name="updatemsg">"After pressing 'PROCEED'you will be taken to the App page.If you see 'UPDATE' button then press it to download latest App version. If you see 'OPEN' button then you already have the latest App version."</string>
+
+    <string name="title">title</string>
+    <string name="subtitle">subtitle</string>
+    <string name="title_activity_bord">Board</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip_text">Skip For Now</string>
+    <string name="onboard_login_title">Login or Register</string>
+    <string name="continue_text">Or Continue With</string>
+    <string name="goog">Sign in With Google</string>
+
+    //FAcebook
+    <string name="facebook_application_id" translatable="false">341624569854950</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb341624569854950</string>
+
+
+  
+
+
+
+
+
+    <string name="disclaimer">"The App is not an official app or does not represent any Government/Board/University. The information presented in app does not imply any affiliation to or endorsement by any entity. The aggregated sources/links provided are for information of the user and the App is not responsible for any content or website. 
+
+The information provided in app though is compiled with utmost care, the app cannot guarantee that this information is and stays 100% accurate. We therefore reserve all rights of app and accept no liability for any kind of damage directly or indirectly that can come from the use or not able to use the information and functionality provided by app."</string>
+    <string name="download">START DOWNLOAD</string>
+    <string name="ot">Share Via...</string>
+    <string name="bi">No installed app can perform this operation</string>
+    <string name="turn_on_storage">turn on Storage</string>
+    <string name="tap_permission">Tap Permissions</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="to_download_files">To download files, you need to:</string>
+    <string name="pg_permission_dialog_title">Permission Required</string>
+    <string name="action_continue">continue</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="update_settings">update settings</string>
+    <string name="permission_explained_title">Why do we need permissions?</string>
+    <string name="allow">allow</string>
+    <string name="without_permission">Storage permission is required for downloading files.</string>
+    <string name="terms_n_conditions">App does not represent Government/Board/University.</string>
+
+</resources>
